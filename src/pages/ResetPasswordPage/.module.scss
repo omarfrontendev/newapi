@@ -1,0 +1,34 @@
+@import "../../styles/variables.scss";
+
+.reset__pass__wrapper {
+  height: calc(100vh - 186px);
+  padding-top: 50px;
+  display: grid;
+  place-items: center;
+
+  .reset__pass__container {
+    width: 527px;
+    .reset__pass__title {
+      font-size: $ft__18;
+      font-weight: $ft__w__medium;
+      color: $darkblue__text__color;
+      margin-bottom: 30px;
+    }
+    .reset__pass__inputs {
+      row-gap: 13px;
+      margin-bottom: 34px;
+    }
+    .submit__btn {
+      width: 100%;
+      height: 50px;
+      box-shadow: 0px 3px 10px #fe82083d;
+      background-color: $main__orange;
+      border: none;
+      outline: none;
+      border-radius: 12px;
+      font-size: $ft__14;
+      font-weight: $ft__w__medium;
+      color: $pure__white;
+    }
+  }
+}

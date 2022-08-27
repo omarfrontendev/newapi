@@ -1,0 +1,282 @@
+@import "../../styles/variables.scss";
+
+.cartDropdown {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    .header__dropdown {
+      padding: 12px 34px;
+      background-color: #F9F9F9;
+      margin-bottom: 45px;
+    }
+      
+    .cart__header {
+      column-gap: 14px;
+
+      .header__image {
+        width: 59px;
+        height: 59px;
+        border-radius: 50%;
+        box-shadow: 0px 3px 6px #00000014;
+        border: 3px solid $pure__white;
+
+        .image {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      .header__title {
+        font-weight: $ft__w__medium;
+        font-size: $ft__14;
+        color: $main__orange;
+        margin-bottom: 4px;
+      }
+      .subtitle {
+        color: $title__text__color;
+        font-size: $ft__12;
+        margin-bottom: 6px;
+        font-weight: $ft__w__regular;
+      }
+      .rating {
+        column-gap: 3px;
+        font-weight: $ft__w__medium;
+        color: $title__text__color;
+        margin-bottom: 8px;
+      }
+      .location {
+        color: #BBBBBB;
+        font-size: $ft__12;
+        column-gap: 7px;
+        font-weight: $ft__w__regular;
+      }
+    }
+
+    .items_cart_content {
+      padding: 0 34px;
+      margin-bottom: 64px;
+
+      .items_cart__title {
+        font-size: $ft__14;
+        font-weight: $ft__w__medium;
+        margin-bottom: 29px;
+      }
+      .items__cart {
+        row-gap: 13px;
+
+        .item__cart {
+          padding: 10px 16px;
+          border-radius: 12px;
+          overflow: hidden;
+          background-color: #F9F9F9 ;
+          height: 35px;
+
+          .item__name {
+            font-size: 13px;
+            font-weight: $ft__w__medium;
+            color: $title__text__color;
+            flex: 1;
+          }
+          .item_amount_control {
+            background-color: $pure__white;
+            border: 1px solid #E9E9E9;
+            border-radius: 12px;
+            justify-content: space-around;
+            font-size: $ft__14;
+            font-weight: $ft__w__medium;
+            color: $dark__text__color;
+            margin-right: 23px;
+            width: 94px;
+            height: 26px;
+
+            .add,
+            .remove {
+              background-color: transparent;
+              color: $main__orange;
+              border: none;
+              outline: none;
+            }
+          }
+          .item__price {
+            font-size: 13px;
+            font-weight: $ft__w__medium;
+            color: $main__orange;
+            .SAR {
+              color: $title__text__color;
+            }
+          }
+        }
+      }
+    }
+
+    .note {
+      padding: 0 34px;
+      margin-bottom: 42px;
+
+      .note__title {
+        color: $title__text__color;
+        font-size: $ft__14;
+        font-weight: $ft__w__medium;
+        margin-bottom: 17px;
+      }
+
+      .addd__note {
+        width: 100%;
+        height: 50px;
+        border-radius: 50px;
+        border: 1px solid #E1E1E1;
+        padding: 0 20px;
+        column-gap: 18px;
+
+        svg {
+          width: -moz-fit-content;
+          width: fit-content;
+          display: block;
+          height: 26px;
+        }
+
+        .add_note__input {
+          border: none;
+          width: 100%;
+          height: 100%;
+          &::placeholder {
+            color: $dark__text__color;
+            font-size: $ft__14;
+            font-weight: $ft__w__regular;
+          }
+        }
+        .save_note__btn {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          color: $main__orange;
+          font-weight: $ft__w__medium;
+          font-size: $ft__14;
+        }
+
+      }
+    
+    }
+
+    .payment_details_content {
+      padding: 0 34px;
+      margin-bottom: 42px;
+
+      .payment_details__title {
+        color: $main__orange;
+        font-size: $ft__14;
+        font-weight: $ft__w__medium;
+        margin-bottom: 22px;
+      }
+      .payment__details {
+        row-gap: 7px;
+
+        .payment_details__row {
+          &:not(:last-child) {
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgb(112, 112, 112, .12);;
+          }
+          &:last-child {
+            padding-top: 3px;
+          }
+        }
+        .value ,
+        .details {
+          color: $dark__text__color;
+          font-size: $ft__12;
+          font-weight: $ft__w__medium;
+        }
+        .value {
+          font-weight: $ft__w__regular;
+          &.total {
+            font-weight: $ft__w__medium;
+          }
+        }
+      }
+    }
+
+    .cheackout__btn {
+      margin: 20px auto 20px;
+      width: calc(100% - 68px);
+    }
+  }
+
+.dropdown__content {
+  max-height: 48vh;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+
+.empty__Cart{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .image {
+    width: 100%;
+  }
+}
+
+// ======== Start Media max-width: 1399px (1200px - 1399px) ==========//
+@media(max-width: 1399px) {
+  .cartDropdown {
+    .header__dropdown {
+      margin-bottom: 36px;
+      padding: 12px 30px;
+    }
+    .payment_details_content,
+    .items_cart_content,
+    .note {
+      padding: 0 30px;
+    }
+    .payment_details_content,
+    .note {
+      margin-bottom: 20px;
+    }
+    .items_cart_content {
+      margin-bottom: 40px;
+
+      .items_cart__title {
+        margin-bottom: 18px;
+      }
+    }
+    .payment_details_content {
+      .payment_details__title {
+        margin-bottom: 14px;
+        padding-top: 10px;
+      }
+    }
+    .cheackout__btn {
+      width: calc(100% - 60px);
+    }
+  }
+  .dropdown__content {
+    max-height: 44vh;
+    max-height: calc(100vh - 400px);
+    flex: 1;
+  }
+  
+}
+// ======== End Media max-width: 1399px (1200px - 1399px) ==========//
+// ======== Start Media max-width: 991px (768px - 99p1x) ==========//
+@media(max-width: 991px) {
+  .dropdown__content {
+    max-height: calc(100vh - 240px);
+  }
+}
+// ======== End Media max-width: 991px (768px - 991px) ==========//
