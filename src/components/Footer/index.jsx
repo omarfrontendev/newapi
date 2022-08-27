@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./.module.scss";
 import { MatnLogo } from "../../UI/icons";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
 
@@ -10,8 +11,9 @@ export default function Footer() {
         className={`container__wrapper ${styles.app__main__footer__wrapper}`}
       >
         <div className="left__side">
-          <p className={styles.copyright}>Copyright © Pick.a.</p>
-          <p className={styles.copyright}>All rights reserved</p>
+          <p className={styles.copyright}>Copyright © Pick.a. All rights reserved</p>
+            <Link to='/privacy' className={styles.link}>privacy</Link>
+            <Link to='/support' className={styles.link}>Support</Link>
         </div>
         <div className="right__side">
           <p>Powered By</p>

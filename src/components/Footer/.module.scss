@@ -18,6 +18,10 @@
     align-items: center;
     justify-content: space-between;
   }
+  .link {
+    margin-right: 10px;
+    color: $dark__text__color;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -27,3 +31,4 @@
     width: 100%;
   }
 }
+

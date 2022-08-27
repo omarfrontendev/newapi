@@ -23,7 +23,6 @@ const ForgotPasswordModal = function ({ forgotPassword }) {
     <Modal maxWidth={"588px"} id={"forgot__password__modal"}>
       <div className={"forgot__password__area__modal"}>
         <PopUpWrapper
-          // textStart={true}
           id={"forgot__password__modal"}
           title={"Forgot Password"}
         >

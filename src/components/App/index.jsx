@@ -26,6 +26,8 @@ import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/js/bootstrap.bundle";
 import "bootstrap/js/dist/dropdown";
 import "bootstrap/js/dist/button";
+import SupportPage from "../../pages/SupportPage";
+import Privacy from "../../pages/Privacy";
 
 export default function App() {
   return (
@@ -44,6 +46,8 @@ export default function App() {
         <Route path="/order-details" element={<OrderDetailsPage />} />
         <Route path="/order-tracking" element={<OrderTrackingPage />} />
         <Route path="/reset-password" element={<ResetPasswordPage />} />
+        <Route path='/support' element={<SupportPage />} />
+        <Route path='/privacy' element={<Privacy />} />
       </Routes>
     </Layout>
   );
